@@ -35,8 +35,6 @@ The dataset is first preprocessed to handle missing values, encode categorical f
 ### Model Training
 
 - The model is trained using `scikit-learn`.
-- Cross-validation is applied to evaluate the model's performance.
-- Hyperparameters are tuned for better accuracy.
 
 ## Streamlit Web App
 
