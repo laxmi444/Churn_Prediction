@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 import pandas as pd
 import pickle
 
-# load the trained model
+## load the trained model
 model = tf.keras.models.load_model("model.h5")
 
 # loading the encoder and scaler
