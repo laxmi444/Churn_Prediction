@@ -1,15 +1,21 @@
 # Churn Prediction Model with Streamlit
 
-This project involves building a churn prediction model using machine learning and deploying it as a web application using Streamlit.
+## Overview
+This application is designed to predict customer churn using an Artificial Neural Network (ANN). It utilizes Streamlit for the user interface, providing a simple and interactive experience for users to input data and predict whether a customer will churn.
 
-## Project Overview
 
-The goal of this project is to predict whether a customer will churn (leave a service) based on various features like customer behavior, account details, and historical data. The model is trained using a classification algorithm and then deployed using Streamlit for easy interaction.
+## Features
+- **Input Data**: Users can enter customer data via the app interface.
+- **Prediction Model**: An Artificial Neural Network (ANN) model using a **Sequential** architecture.
+- **Binary Classification**: The model classifies customers as likely to churn (1) or not likely to churn (0).
+- **Optimizer & Loss Function**: The model uses the Adam optimizer and Binary Cross-Entropy loss function.
+- **One-Hot Encoding**: Categorical features are preprocessed using One-Hot Encoding for efficient model performance.
 
-### Key Features:
-- **Churn Prediction Model:** Predicts whether a customer will churn or stay based on historical data.
-- **Streamlit Web App:** A user-friendly interface where you can input customer data and get churn predictions.
-
+## Technologies
+- **Streamlit**: For creating the interactive web interface.
+- **TensorFlow/Keras**: For building the Artificial Neural Network (ANN) using the Sequential model.
+- **Scikit-Learn**: For data preprocessing (One-Hot Encoding).
+- **Pandas**: For handling and manipulating data.
 ## Installation
 
 Follow these steps to set up the project on your local machine.
@@ -26,19 +32,6 @@ Follow these steps to set up the project on your local machine.
     source venv/bin/activate  # On Windows use venv\Scripts\activate
     ```
 
-## Model Development
-
-### Data Preprocessing
-
-The dataset is first preprocessed to handle missing values, encode categorical features, and normalize numerical values. Various machine learning models like Logistic Regression, Random Forest, or XGBoost are tested to find the best performing model.
-
-### Model Training
-
-- The model is trained using `scikit-learn`.
-
-## Streamlit Web App
-
-Once the model is trained, we create a simple web app using Streamlit to interact with the model. The app allows users to input customer information and get a prediction on whether they will churn or not.
 
 ### Running the Streamlit App
 
